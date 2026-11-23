@@ -10,7 +10,7 @@ public class Ej10 {
 		System.out.println("--- Con directory(new File(\"datos\"))");
 		ProcessBuilder pb = Lanzador.para("ejercicios.cuaderno0.DondeEstoy");
 
-		pb.directory(new File("datos"));
+		pb.directory(new File("datos")); //new file porque
 		pb.inheritIO().start().waitFor();
 	}
 }
