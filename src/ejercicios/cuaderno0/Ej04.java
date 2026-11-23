@@ -2,10 +2,10 @@ package ejercicios.cuaderno0;
 
 import java.io.IOException;
 
-public class Ej04_PadreNoEspera {
+public class Ej04 {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-		ProcessBuilder pb = Lanzador.para("ejercicios.cuaderno0.Ej04_Saludo");
+		ProcessBuilder pb = Lanzador.para("ejercicios.cuaderno0.Saludo");
 		pb.inheritIO();
 		Process hijo = pb.start();
 		//Thread.sleep(1000);

@@ -7,7 +7,7 @@ public class Sale {
 		int codigo = Integer.parseInt(args[0]);
 		System.out.println("Voy a terminar con código " + codigo);
 		System.exit(codigo);
-		//System.exit(256);
+		//System.exit(256); //En linux 256 se convierte en 0 y parece que todo ha ido bien
 
 	}
 }

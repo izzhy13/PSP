@@ -1,6 +1,6 @@
 package ejercicios.cuaderno0;
 
-public class Ej04_Saludo {
+public class Saludo {
 
 	public static void main(String[] args) {
 		
