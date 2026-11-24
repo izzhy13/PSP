@@ -14,10 +14,8 @@ public final class Lanzador {
 	public static ProcessBuilder para(String clase, String... argumentos) {
 		
 		//java.home es la carpeta del JDK qye esra ejecutando al padre
-		String java = Path.of(System.getProperty("java.home"), "bin", "java")
-				.toString();
-		String cp = Path.of(System.getProperty("java.class.path"))
-				.toAbsolutePath().toString();
+		String java = Path.of(System.getProperty("java.home"), "bin", "java").toString();
+		String cp = Path.of(System.getProperty("java.class.path")).toAbsolutePath().toString(); //donde estan mis clases
 		
 		List<String> orden = new ArrayList<>();
 		orden.add(java);

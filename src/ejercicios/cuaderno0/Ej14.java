@@ -6,9 +6,8 @@ public class Ej14 {
 
 	public static void main(String[] args) throws Exception {
 
-		Process hijo = Lanzador.para("ejercicios.cuaderno0.Duerme", "10")
-				.inheritIO().start();
-		boolean termino = hijo.waitFor(2, TimeUnit.SECONDS);
+		Process hijo = Lanzador.para("ejercicios.cuaderno0.Duerme", "10").inheritIO().start();
+		boolean termino = hijo.waitFor(2, TimeUnit.SECONDS); //como mucho epsera 2 segudnos LIMITE
 		
 		if (termino) {
 			System.out.println("Padre: terminó a tiempo");
